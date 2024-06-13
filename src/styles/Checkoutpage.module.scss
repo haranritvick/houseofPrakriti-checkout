@@ -1,0 +1,325 @@
+.checkout_main_container {
+    font-family: 'Noto Serif' !important;
+    color: #202124;
+    margin-top: 100px;
+
+    .main_contianer {
+        display: flex;
+        justify-content: center;
+        padding: 7rem;
+
+        .cart_contianer {
+            // background-color: aqua;
+            width: 50%;
+            height: auto;
+            padding: 0 4rem 5rem;
+
+            .cart_header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                line-height: 1;
+                height: auto;
+
+                .review_cart {
+                    font-size: 1rem;
+                    color: #8484a8;
+                }
+
+                .removeAll {
+                    color: rgb(72, 118, 78);
+
+                    .anchor {
+                        text-decoration: none;
+                        color: rgb(72, 118, 78);
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .product_container {
+                display: grid;
+                grid-gap: 2rem;
+
+                .product_list {
+                    display: flex;
+                    gap: 4rem;
+                    border-bottom: 1.5px solid #e1e1ef;
+                    padding-bottom: 1rem;
+
+                    // .product_image {
+                    //     // height: 10rem;
+                    // }
+
+                    .product_info {
+                        line-height: 2rem;
+
+                        .product_title {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+                            width: 100%;
+                            font-weight: 700;
+                        }
+
+                        .product_size {
+                            color: #00723b;
+                        }
+
+                        .product_parent_price {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+
+                            .mainaddCheckout {
+                                color: white;
+                                justify-content: space-between̥;
+                                padding-top: 23px;
+                                .addCheckout {
+                                    background-color: rgb(72, 118, 78);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    flex-direction: row;
+                                    height: 21.5px;
+                                    width: 5rem;
+                                    border-radius: 3px;
+                                }
+                                .addCheckoutButton{
+                                    display: inherit;
+                                    background: rgb(72, 118, 78); 
+                                    color: #fff; 
+                                    border: none; 
+                                    cursor: pointer; 
+                                }
+                                .removeButton {
+                                    color: rgb(72, 118, 78);
+                                    cursor: pointer;
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .address_contianer {
+            border: 1px solid #e1e1ef;
+            width: 55%;
+            height: 765px;
+            background: #fcfcff;
+            padding: 1rem 5rem 0 2rem;
+
+            .addressButton {
+                background: rgb(72, 118, 78);
+                color: white;
+                width: 15rem;
+                height: 2rem;
+                cursor: pointer;
+                border-radius: 3px;
+
+                .addressText {
+                    // margin: 1rem;
+                    padding: 0.3rem 1.5rem;
+                }
+
+                .estimate {
+                    background: #fff;
+                    border: 1px solid #e1e1ef;
+                    padding: 1rem;
+                    margin-bottom: 1rem;
+                    margin-top: 1rem;
+                    width: 35rem;
+                    height: 1.5rem;
+                    color: black;
+                }
+
+                .instruction {
+                    color: black;
+                }
+
+                .deliveryNote {
+                    background: #fff;
+                    border: 1px solid #e1e1ef;
+                    padding: .6rem 1rem;
+                    grid-gap: 2rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    border-radius: 4px;
+                    display: flex;
+                    width: 35rem;
+                    .deliveryNote_input:focus{
+                        outline: none;
+                       border: none;
+                    }
+                    .inputIcon{
+                        width: 25px;
+                        height: auto;
+                    }
+                    // height: 1.5rem;
+
+                    .dnInput {
+                        border: none;
+                        width: 100%;
+                        font-size: medium;
+                        font-family: 'Noto-serif' !important;
+                    }
+                    .dnInput:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+
+                .coupon {
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid #e1e1ef;
+                    padding: .6rem 1rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    border-radius: 4px;
+                    width: 35rem;
+                    height: 2rem;
+                    justify-content: left;
+                    align-items: center;
+                    .inputIcon{
+                        width: 25px;
+                        height: auto;
+                    }
+                    .couponInfo {
+                        color: black;
+                        margin: 2rem;
+                        width: 100%;
+                        padding-left: 0;
+
+                        .couponContent {
+                            padding-top: .3rem;
+                            font-weight: 500;
+                            color: #525271;
+                            font-size: .8rem;
+                        }
+                    }
+
+                    .couponButton {
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .06);
+                        padding: .3rem;
+                        .rightArrowIcon{
+                            width: 25px;
+                            height: auto;
+                        }
+                    }
+                }
+
+                .pay {
+                    display: flex;
+                    flex-direction: row;
+                    border: 1px solid #e1e1ef;
+                    padding: .6rem 1rem;
+                    margin-top: 2rem;
+                    margin-bottom: 2rem;
+                    border-radius: 4px;
+                    width: 35rem;
+                    height: 2rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    .inputIcon{
+                        width: 25px;
+                        height: auto;
+                    }
+                    .payInfo {
+                        color: black;
+                        margin: 2rem;
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
+
+                        .payTitle {
+                            border: 3px;
+                        }
+
+                        .payContent {
+                            border: 1px solid #e1e1ef;
+                            color: #000;
+                            font-size: .6rem;
+                            background-color: #fff;
+                            min-height: 2rem;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .payButton {
+                        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .06);
+                        padding: .3rem;
+                        .rightArrowIcon{
+                            width: 25px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .billInfo {
+                border-top: 1px solid #e1e1ef;
+                // padding-top: 2rem;
+                // margin-top: 2rem;
+                // overflow-x: hidden;
+                width: 250%;
+                color: #525271;
+
+                .billHead {
+                    margin-left: 1rem;
+                    color: #525271;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+
+                .billCostInfo {
+                    margin: 0 1rem;
+                    font-size: 1rem;
+
+                    .billMRP {
+                        padding: .5rem 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .billTotal {
+                        padding: .5rem 1rem;
+                        display: flex;
+                        justify-content: space-between;
+                        background: #e1e1ef;
+                    }
+                }
+            }
+
+            .amtPayable {
+                margin-top: 1rem;
+                background: rgb(72, 118, 78);
+                color: #fff;
+                text-align: center;
+                font-weight: 600;
+                align-items: center;
+                border-radius: .4rem;
+                letter-spacing: .8px;
+                padding: 1rem 20px;
+                cursor: pointer;
+            }
+            .amtPayable:hover{
+                background: rgb(53, 91, 59);
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .main_contianer {
+        display: flex;
+        flex-direction: column;
+        // .address_contianer{
+        //     width: 100%;
+        // }
+    }
+    
+}

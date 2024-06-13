@@ -1,0 +1,12 @@
+.main_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .inner_address{
+        border: 1px solid;
+        padding: 50px;
+        width: 50%;
+        text-align: center;
+    }
+}
